@@ -23,7 +23,8 @@ If you have Package Control installed in Sublime Text the following steps are ne
 Differences from the original
 -----------------------------
 
-	crond (https://github.com/chef-cookbooks/cron/blob/master/providers/d.rb)
+* crond (https://github.com/chef-cookbooks/cron/blob/master/providers/d.rb)
+* aptpintoversion (https://github.com/chef-cookbooks/apt/blob/master/providers/preference.rb)
 
 Completions
 -----------

@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+apt_preference '${1:name}' do
+	pin          'version ${2:1.0}'
+	pin_priority '1001'
+end
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>aptpintoversion</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.ruby</scope>
+	<description>apt pin to version</description>
+</snippet>
