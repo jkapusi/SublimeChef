@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+daemon '${1:name}' do
+	provider :runit
+	command '${2:/bin/true}'
+	setup_command '${3:/bin/true}'
+	directory '${4:/tmp}'
+	env({ '${5:ENV}' => '${6:VALUE}' })
+	log :enable => true, :frequency => "daily", :size => 10000000, :num => 5
+end
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>daemonfullrunit</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.ruby</scope>
+	<description>daemon provider with runit</description>
+</snippet>

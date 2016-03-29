@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+maven_artifact_package '${1:name}' do
+	group '${2:com.example}'
+	version '${3:1.0-1}'
+	notifies :restart, 'service[${4:service}]', :delayed
+end
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>mavenartifact</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.ruby</scope>
+	<description>package options</description>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+daemon '${1:name}' do
+	provider :runit
+	command '${2:/bin/true}'
+	log :enable => true
+end
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>daemonrunit</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.ruby</scope>
+	<description>daemon provider with runit</description>
+</snippet>
