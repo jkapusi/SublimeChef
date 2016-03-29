@@ -12,14 +12,18 @@ Maybe this is better explained with a [youtube demo video](http://www.youtube.co
 Install
 -------
 
-If you have Package Control installed in Sublime Text 2 just press ctrl+shift+p (Windows, Linux) or cmd+shift+p (OS X) to open the Command Pallete.
-Start typing 'install' to select 'Package Control: Install Package', then search for Chef and select it. That's it.
+If you have Package Control installed in Sublime Text the following steps are needed:
+* press ctrl+shift+p (Windows, Linux) or cmd+shift+p (OS X) to open Command Pallete
+* start typing 'repository' to select 'Package Control: Add Repository'
+* paste github url: https://github.com/jkapusi/SublimeChef
+* open the Command Pallete again (ctrl+shift+p or cmd+shift+p)
+* start typing 'install' to select 'Package Control: Install package'
+* start typing 'chef' and find the repository name in the description (there is multiple package with the same name, so make sure you selected the right one)
 
-You can also install this package manually by entering the Packages directory of Sublime Text 2 and issuing on a terminal:
-    
-    git clone https://github.com/cabeca/SublimeChef Chef
+Differences from the original
+-----------------------------
 
-
+	crond (https://github.com/chef-cookbooks/cron/blob/master/providers/d.rb)
 
 Completions
 -----------
